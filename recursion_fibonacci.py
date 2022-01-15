@@ -2,6 +2,11 @@ from timeit import default_timer
 
 fib_num = 7
 
+def fib(n):
+  return 1 if n == 1 else 0 if n == 0 else fib(n - 1) + fib(n - 2)
+print(fib(fib_num))
+
+
 start = default_timer()
 def fibonacci(num):
   if num == 0:

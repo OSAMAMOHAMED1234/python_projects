@@ -16,6 +16,7 @@ print(os.path.expanduser('~')) # user dir
 
 
 # username
+print(os.path.expandvars('%userprofile%'))
 print(os.path.expanduser('~').split('\\')[-1])
 print(os.path.split(os.path.expanduser('~'))[-1])
 print(os.getlogin())

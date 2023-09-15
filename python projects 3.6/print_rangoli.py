@@ -15,8 +15,8 @@ def print_rangoli(size):
   alphabet = [chr(i) for i in range(97, 123)]
   rangoli_list = []
   for i in range(size):
-    s = '-'.join(alphabet[i:size])
-    rangoli_list.append((s[::-1] + s[1:]).center(4 * size - 3, '-'))
+    lis = '-'.join(alphabet[i:size])
+    rangoli_list.append((lis[::-1] + lis[1:]).center(4 * size - 3, '-'))
   print('\n'.join(rangoli_list[:0:-1] + rangoli_list))
 
 print_rangoli(5)

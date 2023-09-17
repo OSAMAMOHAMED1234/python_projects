@@ -1,7 +1,7 @@
 def runner_up(n, lis):
   scores = list(lis)
   scores.sort()
-  for _ in range(n):
+  for _ in scores:
     if scores[-1] == scores[-2]:
       scores.pop(-1)
   print(scores[-2])

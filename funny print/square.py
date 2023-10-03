@@ -8,9 +8,9 @@ for i in range(rows):
 print('*' * 50)
 
 # hollow
-for i in range(rows):
-  for j in range(rows):
-    if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:
+for row in range(rows):
+  for col in range(rows):
+    if row == 0 or row == rows - 1 or col == 0 or col == rows - 1:
       print('*', end='')
     else:
       print(' ', end='')

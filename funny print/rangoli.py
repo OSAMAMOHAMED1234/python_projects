@@ -11,12 +11,12 @@
 # alphabet = string.ascii_lowercase 
 
 
-def print_rangoli(size):
-  alphabet = [chr(i) for i in range(97, 123)]
+def rangoli(size):
+  alphabet = [chr(char) for char in range(97, 123)]
   rangoli_list = []
-  for i in range(size):
-    lis = '-'.join(alphabet[i:size])
-    rangoli_list.append((lis[::-1] + lis[1:]).center(4 * size - 3, '-'))
+  for letter in range(size):
+    alpha_str = '-'.join(alphabet[letter:size])
+    rangoli_list.append((alpha_str[::-1] + alpha_str[1:]).center(4 * size - 3, '-'))
   print('\n'.join(rangoli_list[:0:-1] + rangoli_list))
 
-print_rangoli(5)
+rangoli(6)

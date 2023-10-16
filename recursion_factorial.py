@@ -35,3 +35,27 @@ def factorial_variable(n):
   return n
 print(factorial_variable(5))
 
+
+print('*' * 50)
+
+def sum_with_previous_numbers(n):
+  if n == 0 :
+    return 0
+  return n + sum_with_previous_numbers(n - 1)
+print(sum_with_previous_numbers(5))
+
+
+def sum_with_previous_odd_numbers(n):
+  total = 0
+  for i in range(1, n + 1, 2):
+    total += i
+  return total
+print(sum_with_previous_odd_numbers(5))
+
+
+def sum_with_previous_even_numbers(n):
+  total = 0
+  for i in range(2, n, 2):
+    total += i
+  return total
+print(sum_with_previous_even_numbers(5))
